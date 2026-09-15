@@ -13,7 +13,7 @@ function calculate(catalog,cart,discount=0,commission=0){
 function validateOrder(x){
  if(clean(x.client).length<1||clean(x.client).length>120)throw Error('Escribe el nombre o ID del cliente (máximo 120 caracteres)');
  if(!/^[A-Z0-9 -]{1,16}$/i.test(clean(x.plate)))throw Error('Escribe una matrícula válida (letras, números, espacios o guiones)');
- if(!clean(x.model)||clean(x.model).length>100)throw Error('Escribe el modelo del vehículo');
+ if(clean(x.model).length>100)throw Error('El modelo del vehículo es demasiado largo');
  if(!['Efectivo','Transferencia','Tarjeta','Otro'].includes(x.payment))throw Error('Selecciona un método de pago');
  if(!Array.isArray(x.lines)||!x.lines.length)throw Error('Agrega al menos un servicio');
  if(clean(x.note).length>1000)throw Error('La nota es demasiado larga');

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="OverSpeed">
+  <rect width="64" height="64" rx="14" fill="#05090C"/>
+  <path d="M12 40c4-13 14-20 26-20 6 0 10 2 13 5l-5 5c-2-2-5-3-8-3-9 0-16 5-19 13z" fill="#D42232"/>
+  <path d="M16 46h13l-3 5H13zM33 46h13l-3 5H30z" fill="#F2F3F5" opacity=".9"/>
+</svg>
